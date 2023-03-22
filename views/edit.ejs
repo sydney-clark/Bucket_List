@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <%- include('./partials/head.ejs')  %>
+    </head>
+    <body class="editPage">
+        <h1 class="editTitle">Edit Your Bucket List Ideas!</h1>
+        <nav class="editButton">
+            <button><a href="/bucket_list">Back</a></button>
+        </nav>
+        <form action = "/bucket_list/<%=places._id%>?_method=PUT" method="POST" class="editForm">
+            Name: <input type="text" name="name" value="<%=places.name%>"/><br/>
+            Visited: <input type="checkbox" name="visited" <%= places.visited == true ? 'checked' : ''%>></br>
+                <!-- sumbit button going back to index page but not applying the changes -->
+            <input type="submit" value="Submit Changes" class="button"/>
+        </form>
+    </body>
+</html>

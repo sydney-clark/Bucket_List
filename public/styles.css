@@ -1,0 +1,155 @@
+/* index css */
+
+.title {
+    background-image: url("https://i.imgur.com/2AAWYpY.jpg");
+    background-image: no-repeat fixed 100% 100%;
+    font-size: 70px;
+    color: rgb(146, 88, 207);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    text-align: center;
+    margin: 0  auto;
+    padding: 0px;
+}
+
+.homePage {
+    background-image: url("https://i.imgur.com/EO3j4DN.jpg");
+    background-image: no-repeat fixed 100% 100%;
+    max-width: 100%;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.newPlace {
+    text-align: center;
+    padding-top: 30px;
+    cursor: pointer;
+    color: black;
+}
+
+/* show page css */
+
+.showPage {
+    background-image: url("https://i.imgur.com/C1BUA3O.jpg");
+    background-image: no-repeat fixed 100% 100%;
+    max-width: 100%;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.name {
+    font-size: 100px;
+    color: rgb(7, 7, 7);
+    text-shadow: -1px -1px 0 #fdfdfd, 1px -1px 0 #fdfdfd, -1px 1px 0 #fdfdfd, 1px 1px 0 #fdfdfd;
+    text-align: center;
+    margin-top: -25px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+#backBtn {
+    width: 80px;
+    background-color: tan;
+    color: white;
+    margin-top: -15px;
+    margin-left: 58px;
+    float: left;
+}
+
+#lists {
+    font-size: 20px;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    margin-top: 56px;
+    padding: 0px;
+    list-style-type: none;
+    font-weight: bold;
+    line-height: 0px;
+}
+
+#see {
+    margin-top: 55px;
+    font-size: 40px;
+    color: rgb(7, 7, 7);
+    text-align: center;
+    padding: 0px;
+    font-weight: bold;
+}
+
+#pictures {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* new page */
+
+.newPage {
+    background-image: url("https://i.imgur.com/OLGaMFU.jpg");
+    background-image: no-repeat fixed 100% 100%;
+    max-width: 100%;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.newTitle {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.add {
+    color: white;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: -80px;
+}
+
+.new {
+    text-align: center;
+    background-color: transparent;
+}
+
+input.new::placeholder {
+    color: black;
+}
+
+.createButton {
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.backButton {
+    background-color: #d24c4c;
+}
+
+/* Edit page */
+
+.editPage {
+    background-image: url("https://i.imgur.com/qBwBebF.jpg");
+    background-image: no-repeat fixed 100% 100%;
+    max-width: 100%;
+    background-size: cover; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.editTitle {
+    text-align: center;
+    margin: 210px;
+    margin-bottom: 10px;
+}
+
+.editButton {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.editForm {
+    text-align: center;
+}

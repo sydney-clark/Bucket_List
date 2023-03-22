@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <%- include('./partials/head.ejs')  %>
+    </head>
+    <body>
+        <h1 class="title">The Bucket List</h1>
+        <div class="homePage">
+                <nav class="newPlace">
+                    <a href="/bucket_list/new">Create a New Bucket List Place!</a>
+                </nav>
+        <ul>
+            <% places.forEach(places=> { %>
+                <li class="tops">
+                    <a href="/bucket_list/<%= places._id %>">
+                        <h1 class="pNames"><%= places.name %></h1>
+                    </a></br>
+
+                    <img src= <%=places.img%>></br>
+
+                    <form action="/bucket_list/<%= places.id %>?_method=PUT" method="POST">
+                        Have been to:
+                        <input type="checkbox" name="visited" <% if (places.visited===true) { %>
+                        checked
+                        <% } %>/></br>
+
+                    <button class="button"><a href="/bucket_list/<%=places._id %>/edit">Edit</a></button>
+                    <form action="/bucket_list/<%= places._id %>?_method=DELETE" method="POST">
+                        <input type="submit" class="button" value="DELETE"/>
+                    </form>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+    </body>
+</html>

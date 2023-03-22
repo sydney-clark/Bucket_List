@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head.ejs')  %>
+    <title>New Pokemon</title>
+</head>
+
+<body class="newPage">
+    <h1 class="newTitle">Add A New Bucket List Place!</h1>
+    <nav>
+        <button class="backButton"><a href="/bucket_list">Back</a></button>
+    </nav>
+    <form action="/bucket_list" method="POST" autocomplete="off" class="add">
+        Name: <input type="text" name="name" class="new" placeholder="new place"/> <br/>
+        Language: <input type="text" name="language" class="new" placeholder="languages spoke"/> <br/>
+        Currency: <input type="text" name="currency" class="new" placeholder="currency type"/> <br/>
+        Visited: <input type="checkbox" name="visited" class="new"></br>
+        <input type="submit" class="createButton" value="Create New Bucket List Item" />
+    </form>
+</body>
+</html>

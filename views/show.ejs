@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <%- include('./partials/head.ejs')  %>
+    </head>
+<body class="showPage">
+    <h1 class="name">
+        <%=showBucketList.name%>
+    </h1>
+    <nav>
+        <button id="backBtn"><a href="/bucket_list">Back</a></button>
+    </nav>
+    <li id="lists">Languages: <%=showBucketList.language%></li>
+
+    <li id="lists">Currency: <%=showBucketList.currency%></li>
+
+<div>
+    <h2 id="see">Things to see</h2>
+    <ul id="pictures">
+        <!-- images not rendering -->
+        <img src="<%= showBucketList.thingsToDo%>">
+        <img src="<%= showBucketList.thingsToDo%>">
+        <img src="<%= showBucketList.thingsToDo%>">
+    </ul>
+</body>
+</html>
